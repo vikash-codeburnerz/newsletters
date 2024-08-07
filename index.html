@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        width: 640px;
+        margin: 0 auto;
+      }
+
+      .main-wrapper {
+        margin: 20px auto;
+      }
+
+      .main-logo {
+        max-width: 576px;
+      }
+
+      .main-gif {
+        max-width: 512px;
+      }
+
+      .inner-wrapper {
+        text-align: center;
+        width: 600px;
+        margin: 0 auto;
+      }
+
+      .inner-wrapper a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .inner-wrapper .ss24-head {
+        font-size: 1.8rem;
+      }
+
+      .inner-wrapper .second-head {
+        font-size: 1.3rem;
+      }
+
+      .inner-wrapper .ss24-desc {
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-transform: none;
+      }
+
+      .shop-grid {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .shop-btn {
+        background-color: #000;
+        padding: 10px 20px;
+        border: none;
+        color: #fff !important;
+        display: block;
+        width: fit-content;
+        margin: 30px auto;
+      }
+
+      .inner-grid img {
+        max-width: 280px;
+      }
+
+      .category-head {
+        font-weight: 600;
+      }
+
+      .sub-cat {
+        font-weight: 400;
+      }
+
+      .main-wrapper h3 {
+        font-size: 0.8rem;
+      }
+
+      .category-head,
+      .sub-cat {
+        text-decoration: underline;
+        color: #000;
+        font-size: 0.8rem;
+      }
+
+      .shop-grid .sub-cat {
+        padding-top: 10px;
+      }
+
+      .location-grid .inner-grid,
+      .about-grid .inner-grid {
+        width: 100%;
+      }
+
+      .about-grid {
+        margin: 16px auto;
+      }
+
+      .location-grid {
+        display: flex !important;
+      }
+
+      .location-grid .inner-grid:nth-child(1) {
+        padding-right: 70px;
+        border-right: 1px solid #000;
+      }
+
+      .location-grid .inner-grid:nth-child(2) {
+        padding-left: 70px;
+      }
+
+      .subscribe-p {
+        letter-spacing: 0px;
+        word-spacing: -0.9px;
+        padding: 20px;
+        border-top: 2px solid black;
+      }
+
+      .location-grid .inner-grid,
+      .about-grid .inner-grid,
+      .subscribe-p {
+        font-size: 0.55rem;
+      }
+
+      .location-grid p {
+        font-weight: 600;
+      }
+
+      .location-grid .inner-grid:nth-child(1),
+      .about-grid .inner-grid:nth-child(2) h3,
+      .about-grid .inner-grid:nth-child(2) p {
+        text-align: right;
+      }
+
+      .location-grid .inner-grid:nth-child(2),
+      .about-grid .inner-grid:nth-child(1) {
+        text-align: left;
+      }
+
+      .about-grid .inner-grid img {
+        padding-right: 3px;
+        margin-left: -2px;
+      }
+
+      .about-grid .inner-grid p:nth-child(1) img {
+        width: 18px;
+      }
+
+      .about-grid .inner-grid p:nth-child(2) img {
+        width: 18px;
+      }
+
+      .about-grid .inner-grid p:nth-child(3) img {
+        width: 15px;
+        padding-right: 6px;
+      }
+
+      .about-grid .inner-grid p a {
+        display: flex;
+        align-items: center;
+      }
+
+      .about-grid .inner-grid p:nth-child(2) img {
+        filter: invert(1);
+      }
+
+      .locator a {
+        text-decoration: underline;
+        color: grey;
+      }
+
+      .icon {
+        width: 20px;
+        object-fit: contain;
+        aspect-ratio: 1/1;
+      }
+
+      .text-right {
+        text-align: right !important;
+      }
+      .text-left {
+        text-align: left !important;
+      }
+
+      tr,
+      table {
+        width: 100%;
+      }
+      table {
+        border-collapse: separate;
+        border-spacing: 50px 15px;
+      }
+
+      table tr td {
+        width: 50%;
+      }
+
+      .locatorText {
+        font-size: 0.56rem;
+        font-weight: 600;
+      }
+
+      .border {
+        background-color: black;
+        width: 1px;
+        overflow: hidden;
+      }
+
+      .storeLocator {
+        text-decoration: underline;
+        font-size: 11px;
+        font-weight: 600;
+      }
+
+      .storeLocator a {
+        color: gray;
+      }
+
+      .imageTable tbody tr td a {
+        display: block;
+      }
+
+      .imageTable {
+        border-spacing: 0px;
+      }
+
+      .imageTable tbody tr td a img {
+        object-fit: contain;
+        width: 100%;
+        height: 350px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main-wrapper">
+      <div class="inner-wrapper">
+        <img
+          class="main-logo"
+          src="https://almostgods.com/wp-content/uploads/2021/10/ag-logo_900x600.png"
+        />
+        <h2 class="ss24-head">SS24 Solar Minima Out Now</h2>
+        <img
+          class="main-gif"
+          src="https://almostgods.com/wp-content/uploads/2024/07/ss24-newsletter.gif"
+        />
+        <h2 class="second-head">Solar Minima: Explorations Of A Cold Summer</h2>
+      </div>
+      <div class="inner-wrapper">
+        <p class="ss24-desc">
+          For SS24, ALMOST GODS draws its collection name from the astronomical
+          phenomenon called Solar Minima, which refers to a period of lowest
+          solar activity.
+        </p>
+        <p class="ss24-desc">
+          The collection presents a vision of a cold summer, exploring the more
+          subdued yet omnipresent energy of the sun and the mythology that
+          surrounds it.
+        </p>
+        <a
+          class="shop-btn"
+          href="https://almostgods.com/product-category/newarrivals"
+        >
+          SHOP SS24 NOW
+        </a>
+        <h3 class="category-head">
+          <a
+            href="https://almostgods.com/product-category/allmenswear/newarrivalsmenswear"
+            >Menswear</a
+          >
+        </h3>
+        <table class="imageTable">
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  href="https://almostgods.com/product/victoria-fresco-shirt-in-bengal-stripes"
+                >
+                  <img
+                    src="https://almostgods.com/wp-content/uploads/2024/07/shirts.jpg"
+                  />
+                </a>
+                <h3 class="sub-cat">
+                  <a
+                    href="https://almostgods.com/product-category/allmenswear/shirts"
+                    >Shop Shirts</a
+                  >
+                </h3>
+              </td>
+              <td>
+                <a
+                  href="https://almostgods.com/product/winged-tiger-embroidered-pants"
+                  ><img
+                    src="https://almostgods.com/wp-content/uploads/2024/07/bottoms.jpg"
+                /></a>
+                <h3 class="sub-cat">
+                  <a
+                    href="https://almostgods.com/product-category/allmenswear/bottomsm"
+                    >Shop Bottoms</a
+                  >
+                </h3>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="category-head">
+          <a
+            href="https://almostgods.com/product-category/womenswear/newarrivalswomenswear"
+            >Womenswear</a
+          >
+        </h3>
+        <table class="imageTable">
+          <tbody>
+            <tr>
+              <td>
+                <a
+                  href="https://almostgods.com/product/stonewashed-gothic-baby-tee-in-pine"
+                  ><img
+                    src="https://almostgods.com/wp-content/uploads/2024/07/tees.jpg"
+                /></a>
+                <h3 class="sub-cat">
+                  <a
+                    href="https://almostgods.com/product-category/womenswear/topsandshirtsw"
+                    >Shop Tees</a
+                  >
+                </h3>
+              </td>
+              <td>
+                <a
+                  href="https://almostgods.com/product/dream-of-the-orient-midi-satin-skirt"
+                  ><img
+                    src="https://almostgods.com/wp-content/uploads/2024/07/bottoms-women.jpg"
+                /></a>
+                <h3 class="sub-cat">
+                  <a
+                    href="https://almostgods.com/product-category/womenswear/bottomsw"
+                    >Shop Bottoms</a
+                  >
+                </h3>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Visit The Stores</h3>
+        <table>
+          <tbody>
+            <tr>
+              <td>
+                <h3 class="text-right">Dhan Mill</h3>
+                <p class="locatorText text-right">
+                  DHAN MILL COMPOUND SHED NO. 8 CHHATARPUR HILLS, NEW
+                  DELHI
+                </p>
+                <p class="storeLocator text-right">
+                  <a href="https://maps.app.goo.gl/PTpV3WoGJSDN4FFx7"
+                    >Store Locator</a
+                  >
+                </p>
+              </td>
+              <td class="border"></td>
+              <td>
+                <h3 class="text-left">32nd Avenue</h3>
+                <p class="locatorText text-left">
+                  32ND AVENUE (MILESTONE) <br />SECTOR-15, GURGAON
+                </p>
+                <p class="storeLocator text-left">
+                  <a href="https://maps.app.goo.gl/nfpK3rChTezTpwAT9"
+                    >Store Locator</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="subscribe-p" style="word-spacing: 0.05rem">
+          THIS EMAIL WAS SENT TO YOU BECAUSE YOU'VE SUBSCRIBED FOR OUR
+          NEWSLETTER OR MADE A PURCHASE.
+        </p>
+        <div class="shop-grid about-grid">
+          <div class="inner-grid">
+            <p>
+              <a
+                class="social-link-a"
+                href="https://api.whatsapp.com/send?phone=918368044494&text=Hello,%20%0A%20I%20have%20a%20question%20about%20HOME%20-%20almostgods.com"
+              >
+                <img
+                  class="icon"
+                  src="https://almostgods.com/wp-content/uploads/2024/07/whatsapp.png"
+                />
+                <span style="padding: 0.26rem 0">Shop with us on whatsapp</span>
+              </a>
+            </p>
+            <p>
+              <a class="social-link-a" href="https://almostgods.com/">
+                <img
+                  class="icon"
+                  src="https://almostgods.com/wp-content/uploads/2024/04/cropped-favicon-ag-32x32.png"
+                />
+                <span style="padding: 0.2rem 0">www.almostgods.com </span>
+              </a>
+            </p>
+            <p>
+              <a
+                class="social-link-a"
+                href="https://www.instagram.com/almostgods/"
+              >
+                <img
+                  class="icon"
+                  src="https://almostgods.com/wp-content/uploads/2024/07/instagram.png"
+                />
+                <span style="padding: 0.2rem 0">Follow us</span>
+              </a>
+            </p>
+          </div>
+          <div class="inner-grid">
+            <h3 class="text-right">ABOUT US</h3>
+            <p class="text-right">
+              ALMOST GODS IS A FASHION LABEL<br />BASED IN NEW DELHI.
+              ESTABLISHED IN 2018.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
