@@ -1,264 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      /* Global styling */
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif !important;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Newsletter</title>
-  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <style type="text/css">
-    /* Global styling */
-    * {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif !important;
-    }
+      body {
+        width: 100%;
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        margin: 0;
+        padding: 0;
+      }
 
-    body {
-      width: 100%;
-      -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-      margin: 0;
-      padding: 0;
-    }
+      table {
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
 
-    table {
-      border-spacing: 0;
-      border-collapse: collapse;
-    }
+      img {
+        display: block;
+        border: none;
+      }
 
-    img {
-      display: block;
-      border: none;
-    }
+      /* Text styles */
+      h4 {
+        font-size: 21px;
+        font-family: "Domine", serif !important;
+        font-weight: 300;
+        color: #000;
+        text-align: center;
+      }
 
-    /* Text styles */
-    h4 {
-      font-size: 21px;
-      font-family: 'Domine', serif !important;
-      font-weight: 300;
-      color: #000;
-      text-align: center;
-    }
+      h2 {
+        font-size: 58px;
+        font-weight: 300;
+        text-align: center;
+        font-family: "Domine", serif !important;
+        background-size: cover;
+        color: black;
+      }
 
-    h2 {
-      font-size: 58px;
-      font-weight: 300;
-      text-align: center;
-      font-family: 'Domine', serif !important;
-      background-size: cover;
-      color: black;
-    }
+      p {
+        font-size: 14px;
+        text-align: center;
+        margin: 20px 20px;
+      }
 
-    p {
-      font-size: 14px;
-      text-align: center;
-      margin: 20px 20px;
-    }
+      b {
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
 
-    b {
-      text-transform: uppercase;
-    }
-  </style>
-</head>
+  <body>
+    <div
+      style="
+        width: 640px;
+        margin: 40px auto;
+        padding: 20px 10px;
+        border: 10px solid transparent;
+        border-image: url('https://almostgods.com/wp-content/uploads/2024/10/bg-emailer.png')
+          150;
+        border-image-width: 20px;
+      "
+    >
+      <table
+        cellpadding="0"
+        cellspacing="0"
+        style="
+          background-color: #fff;
+          width: 600px;
+          margin: 0 auto;
+          padding: 30px 20px;
+        "
+      >
+        <!-- Logo -->
+        <tr>
+          <td align="center">
+            <img
+              src="https://almostgods.com/wp-content/uploads/2021/10/ag-logo_900x600.png"
+              width="500"
+              style="display: block; margin: 0 auto; padding: 20px 0 !important"
+            />
+          </td>
+        </tr>
 
-<body>
-  <div style="width: 640px; margin: 40px auto; padding: 20px 10px; background-image: url('https://almostgods.com/wp-content/uploads/2024/10/bg-emailer.png'); background-size: cover;">
+        <!-- Background Image Section -->
+        <tr>
+          <td>
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              width="560px"
+              style="
+                background-image: linear-gradient(#c6c6c6, #fff);
+                margin: 0 auto;
+                background-position: center;
+                background-size: cover;
+                height: 320px;
+              "
+            >
+              <tr>
+                <td align="center" style="padding-top: 160px">
+                  <h4>NOW IN</h4>
+                  <h2
+                    style="
+                      background-image: url('https://almostgods.com/wp-content/uploads/2024/10/bg-emailer.png');
+                      background-repeat: repeat;
+                      background-clip: text;
+                      -webkit-background-clip: text;
+                      -webkit-text-fill-color: transparent;
+                    "
+                  >
+                    MUMBAI
+                  </h2>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-    <table cellpadding="0" cellspacing="0" border="0" style="background-color: #fff; width: 600px; margin: 0 auto; padding: 30px 20px;">
-      <!-- Logo -->
-      <tr>
-        <td align="center">
-          <img src="https://almostgods.com/wp-content/uploads/2021/10/ag-logo_900x600.png" width="500" style=" display: block;
-      margin: 0 auto; padding: 20px 0 !important" />
-        </td>
-      </tr>
+        <!-- Text Content -->
+        <tr>
+          <td align="center">
+            <p>
+              Drawing on Almost Gods’ brutalist aesthetic, the Mumbai store is
+              designed to function as a bunker, creating a sanctuary that evokes
+              a sense of permanence amidst an ever-changing cityscape.
+            </p>
+            <b>
+              <p style="margin-top: 20px">We're Open</p>
+            </b>
+          </td>
+        </tr>
 
-      <!-- Background Image Section -->
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" width="560px" style="background-image: linear-gradient(#c6c6c6, #fff); margin: 0 auto; background-position: center; background-size: cover; height: 320px;">
-            <tr>
-              <td align="center" style="padding-top: 160px;">
-                <h4>NOW IN</h4>
-                <h2 style="background-image: url('https://almostgods.com/wp-content/uploads/2024/10/bg-emailer.png');
-                background-repeat: repeat;
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;" >MUMBAI</h2>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
+        <!-- Button -->
+        <tr>
+          <td align="center">
+            <a
+              href="https://almostgods.com/product-category/newarrivals"
+              style="
+                padding: 16px 64px;
+                background-color: black;
+                color: white !important;
+                text-transform: uppercase;
+                font-size: 16px;
+                text-decoration: none;
+                display: block;
+                margin: 38px auto 0 auto;
+                width: max-content;
+              "
+              >Explore Now</a
+            >
+          </td>
+        </tr>
 
-      <!-- Text Content -->
-      <tr>
-        <td align="center">
-          <p>
-            Drawing on Almost Gods’ brutalist aesthetic, the Mumbai store is designed to function as a bunker, creating a sanctuary that evokes a sense of permanence amidst an ever-changing cityscape.
-          </p>
-          <b>
-            <p style="margin-top: 20px;">We're Open</p>
-          </b>
-        </td>
-      </tr>
+        <!-- Images Section -->
+        <tr>
+          <td>
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              width="100%"
+              style="margin: 50px 0"
+            >
+              <tr>
+                <td style="padding-right: 10px; padding-left: 20px">
+                  <a
+                    href="https://almostgods.com/product/alpha-cross-woven-striped-polo-in-navy-and-white"
+                  >
+                    <img
+                      src="https://almostgods.com/wp-content/uploads/2024/08/Alpha-Cross-Woven-Striped-Polo-in-Navy-and-White-scaled.webp"
+                      alt="Alpha-Cross-Woven-Striped-Polo"
+                      style="display: block; width: 100%; height: auto"
+                    />
+                  </a>
+                </td>
+                <td style="padding-right: 20px; padding-left: 10px">
+                  <a
+                    href="https://almostgods.com/product/alpha-cross-woven-striped-polo-in-navy-and-white"
+                  >
+                    <img
+                      src="https://almostgods.com/wp-content/uploads/2024/08/Alpha-Cross-Woven-Striped-Polo-in-Navy-and-White-scaled.webp"
+                      alt="Alpha-Cross-Woven-Striped-Polo"
+                      style="display: block; width: 100%; height: auto"
+                    />
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
 
-      <!-- Button -->
-      <tr>
-        <td align="center">
-          <a href="https://almostgods.com/product-category/newarrivals" style="padding: 16px 64px;
-          background-color: black;
-          color: white !important;
-          text-transform: uppercase;
-          font-size: 16px;
-          text-decoration: none;
-          display: block;
-          margin: 38px auto 0 auto;
-          width: max-content;">Explore Now</a>
-        </td>
-      </tr>
-
-      <!-- Images Section -->
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 50px 0;">
-            <tr>
-              <td style="padding-right: 10px; padding-left: 20px;">
-                <a href="https://almostgods.com/product/alpha-cross-woven-striped-polo-in-navy-and-white">
-                  <img src="https://almostgods.com/wp-content/uploads/2024/08/Alpha-Cross-Woven-Striped-Polo-in-Navy-and-White-scaled.webp" alt="Alpha-Cross-Woven-Striped-Polo" style="display: block; width: 100%; height: auto;" />
-                </a>
-              </td>
-              <td style="padding-right: 20px; padding-left: 10px;">
-                <a href="https://almostgods.com/product/alpha-cross-woven-striped-polo-in-navy-and-white">
-                  <img src="https://almostgods.com/wp-content/uploads/2024/08/Alpha-Cross-Woven-Striped-Polo-in-Navy-and-White-scaled.webp" alt="Alpha-Cross-Woven-Striped-Polo" style="display: block; width: 100%; height: auto;" />
-                </a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- Store Locations -->
-      <tr>
-        <td>
-          <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin: 0;">
-            <tr style="display: block; padding-inline: 20px;">
-              <!-- Store 1 -->
-              <td style="padding-right: 20px;">
-                <h3 style="font-size: 14px;">Dhan Mill</h3>
-                <p style="font-size: 10px; margin: 20px 0; text-align: left;">Dhan Mill Compound Shed No. 8, Chhatarpur Hills, New Delhi</p>
-                <a href="https://maps.app.goo.gl/PTpV3WoGJSDN4FFx7" style="font-size: 10px; text-decoration: underline; text-transform: uppercase; color: grey;">Store Locator</a>
-              </td>
-              <!-- Store 2 -->
-              <td style="padding-left: 20px; padding-right: 20px; border-left: 1px solid black; border-right: 1px solid black;">
-                <h3 style="font-size: 14px;">Mumbai</h3>
-                <p style="font-size: 10px; margin: 20px 0; text-align: left;">Shop No 1, Nav Pooja Apartment, Perry Cross Rd, Bandra West, Mumbai</p>
-                <a href="https://maps.app.goo.gl/PTpV3WoGJSDN4FFx7" style="font-size: 10px; text-decoration: underline; text-transform: uppercase; color: grey;">Store Locator</a>
-              </td>
-              <!-- Store 3 -->
-              <td style="padding-left: 20px;">
-                <h3 style="font-size: 14px;">Gurgaon</h3>
-                <p style="font-size: 10px; margin: 20px 0; text-align: left;">32nd Avenue (Milestone), Sector-15, Gurgaon</p>
-                <a href="https://maps.app.goo.gl/nfpK3rChTezTpwAT9" style="font-size: 10px; text-decoration: underline; text-transform: uppercase; color: grey;">Store Locator</a>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <!-- Footer Text -->
-      <tr>
-        <td>
-          <p style="font-size: 9px; text-align: center; text-transform: uppercase; padding-top: 25px; border-top: 1px solid black;">
-            This email was sent to you because you've subscribed to our Newsletter or made a purchase.
-          </p>
-        </td>
-      </tr>
-
-      <!-- Social Media -->
-      <tr>
-        <td>
-          <table width="100%" style="margin: 16px 0;">
-            <tr>
-              <!-- Social Links -->
-              <td style="font-size: 10px; padding-left: 20px; width: 40%;">
-                <a href="https://api.whatsapp.com/send?phone=918368044494&text=Hello,%20%0A%20I%20have%20a%20question%20about%20HOME%20-%20almostgods.com"
-                style="
-                    color: black;
-                    font-size: 10px;
-                    display: -webkit-inline-box;
-                    text-decoration: none;
-                  ">
-                <img class="icon" src="https://almostgods.com/wp-content/uploads/2024/07/whatsapp.png" width="20"
-                  height="20" style="vertical-align: middle" />
-                <p style="
-                      display: inline;
-                      padding: 0 !important;
-                      text-transform: uppercase;
-                      margin-inline: 5px;
+        <!-- Store Locations -->
+        <tr>
+          <td>
+            <table
+              cellpadding="0"
+              cellspacing="0"
+              border="0"
+              width="100%"
+              style="margin: 0"
+            >
+              <tr style="display: block">
+                <!-- Store 1 -->
+                <td style="padding-right: 10px; padding-left: 30px">
+                  <h3 style="font-size: 14px">Dhan Mill</h3>
+                  <p style="font-size: 10px; margin: 20px 0; text-align: left">
+                    Dhan Mill Compound Shed No. 8, Chhatarpur Hills, New Delhi
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/PTpV3WoGJSDN4FFx7"
+                    style="
                       font-size: 10px;
-                    ">
-                  Shop with us on Whatsapp
-                </p>
-              </a>
-              <a href="https://almostgods.com/" style="
-                    color: black;
-                    font-size: 10px;
-                    display: -webkit-inline-box;
-                    text-decoration: none;
-                    margin-top: 5px;
-                  ">
-                <img class="icon" src="https://almostgods.com/wp-content/uploads/2024/04/cropped-favicon-ag-32x32.png"
-                  width="18" height="18" style="vertical-align: middle" />
-                <p style="
-                      display: inline;
-                      padding: 0 !important;
+                      text-decoration: underline;
                       text-transform: uppercase;
-                      margin-inline: 5px;
+                      color: grey;
+                    "
+                    >Store Locator</a
+                  >
+                </td>
+                <!-- Store 2 -->
+                <td
+                  style="
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    border-left: 1px solid black;
+                    border-right: 1px solid black;
+                  "
+                >
+                  <h3 style="font-size: 14px">Mumbai</h3>
+                  <p style="font-size: 10px; margin: 20px 0; text-align: left">
+                    Shop No 1, Nav Pooja Apartment, Perry Cross Rd, Bandra West,
+                    Mumbai
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/PTpV3WoGJSDN4FFx7"
+                    style="
                       font-size: 10px;
-                    ">
-                  www.almostgods.com
-                </p>
-              </a>
-              <a href="https://www.instagram.com/almostgods/" style="
-                    color: black;
-                    font-size: 10px;
-                    text-decoration: none;
-                    display: -webkit-inline-box;
-                    margin-top: 5px;
-                  ">
-                <img class="icon" src="https://almostgods.com/wp-content/uploads/2024/07/instagram.png" width="18"
-                  height="18" style="vertical-align: middle" />
-                <p style="
-                      display: inline;
-                      padding: 0 !important;
+                      text-decoration: underline;
                       text-transform: uppercase;
-                      margin-inline: 5px;
+                      color: grey;
+                    "
+                    >Store Locator</a
+                  >
+                </td>
+                <!-- Store 3 -->
+                <td style="padding-left: 10px">
+                  <h3 style="font-size: 14px">Gurgaon</h3>
+                  <p style="font-size: 10px; margin: 20px 0; text-align: left">
+                    32nd Avenue (Milestone), Sector-15, Gurgaon
+                  </p>
+                  <a
+                    href="https://maps.app.goo.gl/nfpK3rChTezTpwAT9"
+                    style="
                       font-size: 10px;
-                    ">
-                  Follow us
-                </p>
-              </a>
-              </td>
-              <td style="padding-right: 20px;">
-                  <h3 style="text-align: right; font-size: 16px; font-weight: 500">
+                      text-decoration: underline;
+                      text-transform: uppercase;
+                      color: grey;
+                    "
+                    >Store Locator</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <!-- Footer Text -->
+        <tr>
+          <td>
+            <p
+              style="
+                font-size: 9px;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top: 25px;
+                border-top: 1px solid black;
+              "
+            >
+              This email was sent to you because you've subscribed to our
+              Newsletter or made a purchase.
+            </p>
+          </td>
+        </tr>
+
+        <!-- Social Media -->
+        <tr>
+          <td>
+            <table width="100%" style="margin: 16px 0">
+              <tr>
+                <!-- Social Links -->
+                <td style="font-size: 10px; padding-left: 20px; width: 40%">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=918368044494&text=Hello,%20%0A%20I%20have%20a%20question%20about%20HOME%20-%20almostgods.com"
+                    style="
+                      color: black;
+                      font-size: 10px;
+                      display: -webkit-inline-box;
+                      text-decoration: none;
+                    "
+                  >
+                    <img
+                      class="icon"
+                      src="https://almostgods.com/wp-content/uploads/2024/07/whatsapp.png"
+                      width="20"
+                      height="20"
+                      style="vertical-align: middle"
+                    />
+                    <p
+                      style="
+                        display: inline;
+                        padding: 0 !important;
+                        text-transform: uppercase;
+                        margin-inline: 5px;
+                        font-size: 10px;
+                      "
+                    >
+                      Shop with us on Whatsapp
+                    </p>
+                  </a>
+                  <a
+                    href="https://almostgods.com/"
+                    style="
+                      color: black;
+                      font-size: 10px;
+                      display: -webkit-inline-box;
+                      text-decoration: none;
+                      margin-top: 5px;
+                    "
+                  >
+                    <img
+                      class="icon"
+                      src="https://almostgods.com/wp-content/uploads/2024/04/cropped-favicon-ag-32x32.png"
+                      width="18"
+                      height="18"
+                      style="vertical-align: middle"
+                    />
+                    <p
+                      style="
+                        display: inline;
+                        padding: 0 !important;
+                        text-transform: uppercase;
+                        margin-inline: 5px;
+                        font-size: 10px;
+                      "
+                    >
+                      www.almostgods.com
+                    </p>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/almostgods/"
+                    style="
+                      color: black;
+                      font-size: 10px;
+                      text-decoration: none;
+                      display: -webkit-inline-box;
+                      margin-top: 5px;
+                    "
+                  >
+                    <img
+                      class="icon"
+                      src="https://almostgods.com/wp-content/uploads/2024/07/instagram.png"
+                      width="18"
+                      height="18"
+                      style="vertical-align: middle"
+                    />
+                    <p
+                      style="
+                        display: inline;
+                        padding: 0 !important;
+                        text-transform: uppercase;
+                        margin-inline: 5px;
+                        font-size: 10px;
+                      "
+                    >
+                      Follow us
+                    </p>
+                  </a>
+                </td>
+                <td style="padding-right: 20px">
+                  <h3
+                    style="text-align: right; font-size: 16px; font-weight: 500"
+                  >
                     ABOUT US
                   </h3>
-                  <p style="font-size: 10px; margin-top: 16px; margin-right:0; text-align: right;">
+                  <p
+                    style="
+                      font-size: 10px;
+                      margin-top: 16px;
+                      margin-right: 0;
+                      text-align: right;
+                    "
+                  >
                     ALMOST GODS IS A FASHION LABEL<br />BASED IN NEW DELHI.
                     ESTABLISHED IN 2018.
                   </p>
-              </td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-  </div>
-</body>
-
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>
